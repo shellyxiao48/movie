@@ -1,0 +1,40 @@
+<import src='../movie-rating/rating' />
+<view class="container">
+  <view class='tabwrapper'>
+    <view class='tab_item {{firstselected?"selected":""}}' bindtap='clickTab' data-type-id="0">正在热映</view>
+    <view class='tab_item {{firstselected?"":"selected"}}' bindtap='clickTab' data-type-id="1">即将上映</view>
+  </view>
+  <scroll-view scroll-y bindscrolltolower="scrollbottom" enable-back-to-top style='height:100vh' >
+    <view class='movie-list'>
+      <block wx:for="{{showArr}}" wx:key="{{item.id}}">
+        <view class='list-container'>
+          <image class='list-image' src="{{item.images}}"></image>
+          <view class='list-content'>
+            <view class="list-title">{{item.title}}</view>
+            <view>导演：{{item.directors}}</view>
+            <view>主演：{{item.casts}}</view>
+            <view>类型：{{item.genres}}</view>
+
+            <template is="movie-rateing" data="{{...item.rateing}}"></template>
+            <text class='list-like'>{{item.collect_count}}人想看</text>
+
+
+          </view>
+          <view class='buy-btn'>
+            <block wx:if="{{firstselected}}">
+              <text>购票</text>
+            </block>
+            <block wx:else>
+              <text>想看</text>
+            </block>
+          </view>
+
+
+        </view>
+
+      </block>
+
+    </view>
+  </scroll-view>
+
+</view>

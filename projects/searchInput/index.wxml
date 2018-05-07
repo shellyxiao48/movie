@@ -1,0 +1,32 @@
+<!--projects/searchInput/index.wxml-->
+<view class='container'>
+  <view class='searchbar' bindtap='searchtap'>
+    <icon type='search' size='25'></icon>
+    <input placeholder='搜索电影' value='{{searchValue}}' class='search' bindinput='bindSearch' />
+    <block wx:if="{{searchValue}}">
+     <icon type='cancel' color="#000" bindtap='cancel' size='25' bindtap='cancle'></icon>
+    </block>
+   
+  </view>
+  <view class="searchcontent">
+    <scroll-view scroll-y bindscrolltolower="scrollbottom" enable-back-to-top style='height:100vh;'>
+      <block wx:for="{{List.subjects}}" wx:key="{{item.id}}">
+      <navigator url='../moviePage/index?id={{item.id}}'>
+      <view class='item-content'>
+      
+      <image src='{{item.images}}'></image>
+      <view class='item-detail'>
+         <view class='item-title'>{{item.title}}</view>
+         <view>{{item.average}}分/{{item.year}}/{{item.directors}}</view>
+      </view>
+      </view>
+      </navigator>
+      
+      </block>
+
+
+    </scroll-view>
+
+  </view>
+
+</view>

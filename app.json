@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "projects/index/index",
+    "projects/searchInput/index",
+    "projects/detailList/index",
+    "projects/directorPage/index",
+    "projects/moviePage/index",
+    "projects/movie-grid/grid",
+    "projects/movie-rating/rating"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0000ff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "豆瓣电影",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "projects/index/index",
+        "text": "推荐电影"
+      },
+      {
+        "pagePath": "projects/index/index",
+        "text": "北美票房"
+      }
+    ]
+  },
+  "selectedColor":"#ddd"
+}

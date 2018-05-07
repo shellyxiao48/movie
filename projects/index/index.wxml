@@ -1,0 +1,36 @@
+<!--projects/index/index.wxml-->
+ <import src='../movie-grid/grid'/> 
+<view class='container'>
+  <view class='searchbar' bindtap='searchtap'>
+    <icon type='search' size='16'></icon>
+    <text>搜索电影</text>
+  </view>
+  <view class='film-cells'>
+    <view class='title'>
+      <text class='left'>影院热映</text>
+      <text class='right' bindtap='bindMore' data-type-id="theaters">更多></text>
+    </view>
+    <view class='content'>
+      <scroll-view scroll-x >
+        <block wx:for="{{theatersArr}}" wx:key="{{item}}" wx:if="{{theatersArr}}">
+           <template is="movie-grid" data="{{...item}}"></template> 
+        </block>
+      </scroll-view>
+    </view>
+
+  </view>
+   <view class='film-cells'>
+    <view class='title'>
+      <text class='left'>即将上映</text>
+      <text class='right'bindtap='bindMore' data-type-id="comingfilm">更多></text>
+    </view>
+    <view class='content'>
+      <scroll-view scroll-x >
+        <block wx:for="{{comingfilmArr}}" wx:key="{{item}}" wx:if="{{comingfilmArr}}">
+           <template is="movie-grid" data="{{...item}}"></template> 
+        </block>
+      </scroll-view>
+    </view>
+
+  </view>
+</view>

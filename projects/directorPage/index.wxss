@@ -1,0 +1,89 @@
+/* projects/directorPage/index.wxss */
+
+/* projects/moviePage/index.wxss */
+.detailcontent{
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+}
+.detailhead>view{
+  font-size: 28rpx;
+  color: #a0a0a1;
+}
+.detailhead .title{
+  font-weight: bold;
+  font-size: 45rpx;
+}
+.detailbtn{
+  margin: 40rpx auto;
+}
+.detailbtn view{
+  display: inline-block;
+  width: 50%;  
+  text-align: center;
+}
+.detailbtn text{
+  padding: 8rpx 70rpx;
+  border: 1px solid #e1a842;
+  color: #e1a842;
+  border-radius: 6px;
+  font-size: 30rpx;
+}
+.summary{
+  margin-bottom: 40rpx;
+ 
+  
+}
+ .label{
+  color: #a0a0a1;
+}
+.summary-content{
+  text-indent: 70rpx;
+  font-size: 28rpx;
+  color: #727272;
+}
+.btn-show{
+  color: #7be141;
+  font-size: 32rpx;
+}
+.item{
+  display: inline-block;  
+  width: 200rpx;
+  height: 400rpx;
+  text-align: center;
+}
+.item:not(:first-of-type){
+  margin-left: 15rpx;
+}
+.item image{
+  width: 200rpx;
+  height: 350rpx;
+  border: 1px solid #ccc;
+}
+.castsname{
+  font-size: 28rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detailhead{
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.movie-tag{
+  position: absolute;
+  right: 40rpx;
+  top: 0;
+  padding: 5rpx;
+  border-radius: 6px;
+  background: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 1px 0 3px #ccc;
+  text-align: center;
+
+}
+
+.scroll-container{
+  width: 100%;
+   overflow: hidden; 
+   white-space: nowrap
+}

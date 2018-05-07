@@ -1,0 +1,16 @@
+<!--projects/movie-grid/grid.wxml-->
+<import src="../movie-rating/rating" />
+<template name="movie-grid">
+  <view class="filmwrapper">
+    <navigator url="../moviePage/index?id={{id}}">
+      <image src="{{images}}" class="slide-image" />
+    </navigator>
+      
+      <text class='movie-title'>{{title}}</text>
+      <template is="movie-rateing" data="{{...rateing}}"></template>
+      <text class="movie-love">{{collect_count}}人想看</text>
+
+  </view>
+
+
+</template>

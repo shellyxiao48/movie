@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.searchbar {
+  background-color: #fff;
+  padding: 25rpx;
+  vertical-align: middle;
+  color: #ccc;
+}
+
+.searchbar text {
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.movie-rate{
+  font-size: 32rpx;
+  margin-left: 15rpx;
+}
+
+.searchbar icon {
+  vertical-align: middle;
+}
+.film-cells{
+  margin-top:30rpx;
+}
+.film-cells .title {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.film-cells .title .left {
+  float: left;
+}
+
+.film-cells .title .right {
+  float: right;
+  font-size: 32rpx;
+  color: #0f0;
+}
+
+.film-cells .content {
+  height:400rpx;
+  white-space: nowrap;
+
+}
+
+.film-cells .filmwrapper {
+  display: inline-block;
+  height: 350rpx;
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+
+.film-cells .filmwrapper .slide-image {
+  display: block;
+  height: 280rpx;
+  width: 200rpx;
+}
+
+.film-cells .filmwrapper>text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.film-cells .filmwrapper .movie-title {
+  font-size: 32rpx;
+}
+
+.film-cells .filmwrapper .movie-rate {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.film-cells .filmwrapper .movie-love {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+/*rating  */
+.rating-wrapper{
+  text-align: center;
+}
+.rating-stars {
+  background: url("http://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png") 0 0 no-repeat;
+  width: 55px;
+  height: 11px;
+  margin: 0 3px 0 0;
+  overflow: hidden;
+}
+.allstar00 {
+  background-position: 0 -110px;
+}
+.allstar05 {
+    background-position: 0 -99px;
+}
+.allstar10 {
+    background-position: 0 -88px;
+}
+.allstar15 {
+    background-position: 0 -77px;
+}
+.allstar20 {
+    background-position: 0 -66px;
+}
+.allstar25 {
+    background-position: 0 -55px;
+}
+.allstar30 {
+    background-position: 0 -44px;
+}
+.allstar35 {
+    background-position: 0 -33px;
+}
+.allstar40 {
+    background-position: 0 -22px;
+}
+.allstar45 {
+    background-position: 0 -11px;
+}
+
+/*详情页  */
+.image-wrapper{
+  width: 100%;
+  height: 550rpx;
+  background-color: #e9e9e9;
+  text-align: center;
+}
+.image-wrapper .movie-image{
+  width: 320rpx;
+  height: 450rpx;
+  margin: 50rpx auto;
+}

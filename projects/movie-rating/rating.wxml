@@ -1,0 +1,12 @@
+<!--projects/movie-rating/rating.wxml-->
+
+<template name="movie-rateing">
+<view class='rating-wrapper'>
+  <image class='rating-stars allstar{{stars}}'></image>
+ <text class='movie-rate'>{{average}}</text>
+  
+</view>
+
+
+
+</template>

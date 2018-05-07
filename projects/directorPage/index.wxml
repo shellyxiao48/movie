@@ -1,0 +1,48 @@
+<!--projects/directorPage/index.wxml-->
+<view class='container'>
+  <view class='image-wrapper'>
+    <image class='movie-image' src="{{movieObj.image}}">
+
+    </image>
+  </view>
+  <view class='detailcontent'>
+    <view class='detailhead'>
+      <view class='title'>{{movieObj.name}}</view>
+      <view>出生地：{{movieObj.born_place}}</view>
+      <view>1970-2-3</view>
+      <view>导演/编剧/演员</view>
+ <view class='movie-tag'>
+       11234粉丝
+      
+      </view>
+    </view>
+
+    <view class='summary'>
+      <view class='label'>简介</view>
+      <view class='summary-content'>
+       冯小刚，中国电影编导、导演。其作品风格以北方京味儿喜剧著称，擅长商业片，是中国大陆最具有票房号召力的导演之一
+      </view>
+
+    </view>
+    <view>
+      <text class='label'>代表作品</text>
+      <view class='scroll-container'>
+      <scroll-view scroll-x style='width：100%'>
+        <block wx:for="{{movieObj.works}}" wx:key="{{item}}">
+          <view class='item'>
+  <navigator url='../moviePage/index?id={{item.subject.id}}'>
+            <image src="{{item.subject.images.small}}"></image>
+            <view class='castsname'>{{item.subject.title}}</view>
+           </navigator>
+          </view>
+
+        </block>
+
+      </scroll-view>
+      </view>
+      
+    </view>
+  </view>
+
+
+</view>

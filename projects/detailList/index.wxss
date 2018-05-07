@@ -1,0 +1,74 @@
+/* projects/detailList/index.wxss */
+.tabwrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+}
+.tab_item{
+  display: inline-block;
+  width: 50%;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+.selected{
+  color: #34cd34;
+  border-bottom: 3px solid #34cd34;
+  
+}
+.movie-list{
+  margin-top: 90rpx;
+}
+.list-container{
+  display: flex;
+  width: 100%;
+  padding:25rpx;
+  border-bottom: 1px solid #ccc;
+  color: #a0a0a0;
+  font-size: 28rpx;
+   align-items: center;  
+
+}
+.list-content>view{
+  margin-bottom: 8rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-image{
+  width: 180rpx;
+  height: 280rpx;
+}
+.list-content{
+   width: 410rpx; 
+  padding-left:20rpx;
+  
+}
+.list-title{
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #000;
+}
+.rating-wrapper{
+  text-align: left;
+}
+.buy-btn{
+border:1px solid #a2e1f9;
+width: 80rpx;
+border-radius: 10rpx;
+height: 50rpx;
+line-height: 50rpx;
+text-align: center;
+  color: #a2e1f9;
+
+}
+
+.list-like{
+  color: #a2e1f9;
+}

@@ -1,0 +1,9 @@
+/* projects/index/index.wxss */
+page{
+  background: #eee;
+}
+.film-cells{
+  padding: 25rpx;
+  background-color: #fff;
+
+}

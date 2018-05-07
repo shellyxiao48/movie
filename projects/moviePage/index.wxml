@@ -1,0 +1,52 @@
+<!--projects/moviePage/index.wxml-->
+<import src="../movie-rating/rating"/>
+<view class='container'>
+  <view class='image-wrapper'>
+    <image class='movie-image' src="{{movieObj.image}}">
+
+    </image>
+  </view>
+  <view class='detailcontent'>
+    <view class='detailhead'>
+      <view class='title'>{{movieObj.title}}</view>
+      <view>{{movieObj.year}}/{{movieObj.genres}}</view>
+      <view>原名：{{movieObj.original_title}}</view>
+      <view>国家：{{movieObj.countries}}</view>
+      <view class='movie-tag'>
+        <template is="movie-rateing" data="{{...movieObj.rating}}"></template> 
+      <view class='ratings_count'>{{movieObj.ratings_count}}人</view>
+      
+      </view>
+    </view>
+    <view class='detailbtn'>
+    <view> <text>想看</text></view>
+         <view> <text>看过</text></view>
+
+    </view>
+
+    <view class='summary'>
+    <view class='label'>简介</view>
+    <view class='summary-content'>
+    {{movieObj.summary}}
+    </view>
+
+     </view>
+    <view>
+      <text class='label'>影人</text>
+      <scroll-view scroll-x>
+       <block wx:for="{{movieObj.casts}}" wx:key="{{item}}">
+      <view class='item'>
+        <navigator url='../directorPage/index?id={{item.id}}'>
+        <image src="{{item.avatars.small}}"></image>
+        <view class='castsname'>{{item.name}}</view>
+     </navigator>
+      </view>
+
+        </block>
+       
+      </scroll-view>
+    </view>
+  </view>
+
+
+</view>
